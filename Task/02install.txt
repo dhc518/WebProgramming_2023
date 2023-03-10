@@ -1,0 +1,21 @@
+1.JDK
+	1) JDK 설치
+	2) 설치파일 내부의  bin 폴더 내의 java.exe 와 javac.exe 확인
+	3) 환경변수 설정: 변수 추가, path 편집/추가, 시스템변수 추가
+	4) cmd로 적용 여부 확인
+
+2.Apache Tomcat
+	1) 컴포넌트 기본값
+	2) 포트번호 8005
+	3) 실행환경 = JDk 설치폴더
+	4) 설치경로 기본값
+	5) localhost:8080 접속해서 제대로 설치됬는지 확인
+
+3.eclipse
+	1) Eclipse IDE for Enterprise Java and Web Developers 선택 
+	2) 설치경로 설정, 설치 및 Launch
+	3) 프로젝트 저장 경로 설정
+	4) 환경설정
+		기본 웹브라우저 chrome으로 설정
+		텍스트 인코딩 UTD-8로 설정
+		
