@@ -8,7 +8,7 @@
 
 </head>
 <body>
-	~~<a href="welcom.jsp">JSP 연습장으로 가기</a>~~<br><br>
+	~~<a href="welcom.jsp" target="_blank">JSP 연습장으로 가기</a>~~<br><br>
 	<h3>JSP 스터디 그룹에 오신 것을 환영합니다.</h3>
 
 <hr>

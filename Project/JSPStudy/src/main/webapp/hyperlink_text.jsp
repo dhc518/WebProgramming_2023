@@ -4,11 +4,11 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>하이퍼링크 삽입하기</title>
+<title>텍스트에 하이퍼링크 설정하기</title>
 </head>
 <body>
 	<hr>
-	~~<a href="insert_image.jsp">이미지 삽입된 페이지 확인하기</a>~~<br><br>
+	~~<a href="insert_image.jsp" target="_blank">이미지 삽입된 페이지 확인하기</a>~~<br><br>
 	1. 네이버 사이트 :
 	<a href="https://www.naver.com">
 	[ 바로가기 ]
