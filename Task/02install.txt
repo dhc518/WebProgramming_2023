@@ -18,4 +18,9 @@
 	4) 환경설정
 		기본 웹브라우저 chrome으로 설정
 		텍스트 인코딩 UTD-8로 설정
+	5) 이클립스가 실행이 안될 시
+		*오류정보: Incompatible JVM
+			1))이클립스가 설치된 폴더 안에 eclipse.ini을 아래의 코드를 추가			
+				-vm
+				javaw.exe의 설치경로(ex: C:\Program Files\Java\jdk-15.0.2\bin\javaw.exe)
 		
