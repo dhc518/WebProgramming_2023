@@ -37,8 +37,8 @@
 			<input type="text" maxlegth="4" size="4" name="phone3"><br><br>
 			
 			성별 : <br>
-			<input type="radio" name="gender">남
-			<input type="radio" name="gender">여<br><br>
+			<input type="radio" name="gender" value="남성">남
+			<input type="radio" name="gender"value="여성">여<br><br>
 			
 			취미 : <br>
 			<input type="checkbox" name="hobby" value="운동">운동
