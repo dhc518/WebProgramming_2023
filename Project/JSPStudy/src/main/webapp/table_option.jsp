@@ -7,7 +7,8 @@
 <title>테이블 옵션 설정하기</title>
 </head>
 <body>
-~~<a href="table_default.jsp" target="_blank">디폴트 테이블로 가기</a>~~<br><br>
+	<a href="http://localhost:8080/JSPStudy/List.jsp"> 실습 리스트</a><br>
+	<hr>
 	<h3> 옵션이 적용된 테이블</h3>
 	<hr>
 	<table border="3" width="80%" bgcolor="yellow" bordercolor="red">

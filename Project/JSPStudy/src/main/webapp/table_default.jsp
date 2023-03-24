@@ -7,7 +7,8 @@
 <title>기본 테이블 생성하기</title>
 </head>
 <body>
-	~~<a href="hyperlink_image.jsp" target="_blank">이미지에 하이퍼링크 설정으로 가기</a>~~<br><br>
+	<a href="http://localhost:8080/JSPStudy/List.jsp"> 실습 리스트</a><br>
+	<hr>
 	<h3> 2행 2열의 기본 테이블</h3>
 	<hr>
 	<table border="1">

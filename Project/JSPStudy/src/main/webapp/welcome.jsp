@@ -4,16 +4,18 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>이미지 삽입하기</title>
+<title>JSP 스터디 연습장</title>
 
 </head>
 <body>
 	<a href="http://localhost:8080/JSPStudy/List.jsp"> 실습 리스트</a><br>
 	<hr>
 	<h3>JSP 스터디 그룹에 오신 것을 환영합니다.</h3>
-
-<hr>
-<img src="image/geass.jpg" width="150" height="70"><br>
-<img src="image/geass.jpg" width="150" height="100" style="border: 2000 solid green"><br>
+	<p>
+줄을 나누고 싶어서<br>
+이렇게 줄을 나눠봤습니다.<br>
+<br>
+과연 그대로 출력이 될까?
+</p>
 </body>
 </html>

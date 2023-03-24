@@ -7,7 +7,8 @@
 <title>이미지에 하이퍼링크 설정하기</title>
 </head>
 <body>
-	~~<a href="hyperlink_text.jsp" target="_blank">텍스트에 하이퍼링크 설정으로 가기</a>~~<br><br>
+	<a href="http://localhost:8080/JSPStudy/List.jsp"> 실습 리스트</a><br>
+	<hr>
 	<h3> 오늘의 날씨 살펴보기</h3>
 	<hr>
 		<a href="https://www.weather.go.kr/w/index.do" target="_blank">
