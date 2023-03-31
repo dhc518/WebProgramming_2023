@@ -40,5 +40,23 @@
 		회원가입 페이지</a>
 		<br>&nbsp;	<a href="ch04/form_membership02.jsp" target="_blank">
 		회원가입 완료 페이지</a>
+		<br><br>
+	Chapter 05
+		<br>&nbsp;	<a href="ch05/handlerFunction.jsp" target="_blank">
+		핸들러 함수</a>
+		<br>&nbsp;	<a href="ch05/datainputCheck.jsp" target="_blank">
+		데이터 입력 유뮤 체크</a>
+		<br>&nbsp;	<a href="ch05/dataLength.jsp" target="_blank">
+		입력 데이터의 길이 체크</a>
+		<br>&nbsp;	<a href="ch05/dataLength_success.jsp" target="_blank">
+		입력 데이터의 길이 체크 완료</a>
+		<br>&nbsp;	<a href="ch05/isNaNcheck.jsp" target="_blank">
+		데이터 유효성 검사</a>
+		<br>&nbsp;	<a href="ch05/isNaNcheck_success.jsp" target="_blank">
+		데이터 유효성 검사 완료</a>
+		<br>&nbsp;	<a href="ch05/regularExpression.jsp" target="_blank">
+		데이터 형식의 유효성 검사</a>
+		<br>&nbsp;	<a href="ch05/regularExpression_success.jsp" target="_blank">
+		데이터 형식의 유효성 검사 완료</a>
 </body>
 </html>
