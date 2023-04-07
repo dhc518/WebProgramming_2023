@@ -1,4 +1,37 @@
 세션
 	네트워크 환경에서 클라이언트와 웹 서버간의 상태를 지속적으로 유지하기 위한 방법.
 	서버 공간에 생성되므로 보안 유지에는 유리하지만 데이터를 저장하기 위한 한계성 존재
-	session 객체를 사용
+	
+session 객체를 사용
+	웹 브라우저에 관한 정보를 저장하고 관리하는 역할
+	
+세션 생성
+	setAttribute(String name, Object value)
+	name 세션 이름
+	value 속성값
+
+생성된 세션의 정보를 확인
+	getAttribute(String name)
+
+	getAttributeNames() 의 타입은 Enumeration
+
+	<%@ page import="jave.util.Enumeration" %>
+	Enumeration en = session.getAttributeNames();
+
+유효시간 설정
+	session.setMaxInactiveInterval(int interval_time);
+	session.setMaxInactiveInterval( 60 * 5 ); //300초
+
+로그인 후 세션유지 시간
+	session_id = session.getId();
+	long last_time = session.getLastAccessedTime();
+	long start_time = session.getCreationTime();
+	long user_time = (last_time - start_time) / 60000;
+
+단일 세션 삭제
+	session.removeAttribute("memberId");
+
+다중 세션 삭제
+	session.invalidate()
+
+
