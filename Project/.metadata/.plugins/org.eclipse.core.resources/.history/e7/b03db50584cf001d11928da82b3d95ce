@@ -1,0 +1,23 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>데이터 입력 유뮤 체크</title>
+<script type="text/javascript">
+	function checkFun() {
+		if(document.deptForm.dept.value==""){
+			alert("신청할 전공 분야를 입력해주세요.");
+			
+		}
+			
+	}
+</script>
+</head>
+<body>
+	<a href="http://localhost:8080/JSPStudy/List.jsp"> 실습 리스트</a>
+	<br>
+
+</body>
+</html>

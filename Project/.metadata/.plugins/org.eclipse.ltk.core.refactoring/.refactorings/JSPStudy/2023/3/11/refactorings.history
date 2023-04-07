@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;JSPStudy/src/main/webapp/table_default..jsp&apos; to &apos;table_default.jsp&apos;" description="Rename resource &apos;table_default..jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/main/webapp/table_default..jsp" name="table_default.jsp" stamp="1679037480509" updateReferences="true"/>
+</session>

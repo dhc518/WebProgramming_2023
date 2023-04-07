@@ -1,0 +1,28 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>유저 정보 저장</title>
+</head>
+<body>
+	<a href="http://localhost:8080/JSPStudy/List.jsp"> 실습 리스트</a>
+	<br>
+	<hr>
+	save user information
+	<hr>
+	<%
+		String id = "user1";
+		String password = "password1";
+
+		String path = request.getRealPath("/userlist.jsp");
+		File file = new File(path);
+		FileWriter writer = new FileWriter(file);
+		writer.write(id + ":" + password);
+		writer.close();
+	%>
+	
+
+</body>
+</html>
