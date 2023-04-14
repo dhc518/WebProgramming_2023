@@ -4,15 +4,19 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>로그인 성공</title>
+<title>로그인 실패</title>
 </head>
 <body>
 	<a href="http://localhost:8080/JSPStudy/List.jsp"> 실습 리스트</a>
 	<br>
 	<hr>
-	Home > 로그인 성공 화면
+	Home > 로그인 실패 화면
 	<hr>
-	로그인을 성공적으로 수행하였습니다.
+	로그인을 실패하였습니다!<br><br>
+	<form name="loginForm" action="cookieLoginform.jsp"
+	method="post">
+	<input type="submit" value=" 로그인하기 ">
+	</form>
 
 </body>
 </html>

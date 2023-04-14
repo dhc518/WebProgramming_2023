@@ -4,15 +4,15 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>로그인 성공</title>
+<title>useBean 액션 태그</title>
 </head>
 <body>
 	<a href="http://localhost:8080/JSPStudy/List.jsp"> 실습 리스트</a>
 	<br>
 	<hr>
-	Home > 로그인 성공 화면
+	Home > useBean 액션 태그로 오늘의 날짜와 시각 출력
 	<hr>
-	로그인을 성공적으로 수행하였습니다.
-
+	<jsp:useBean id="nowTime" class="java.util.Date" />
+	<%= nowTime.toLocaleString() %>
 </body>
 </html>
