@@ -1,0 +1,6 @@
+www.yotest.site
+
+USER path에 아래 경로 등록
+cd C:\Program FIles\MySQL\MySQL Server 8.0\bin
+
+mysql -h sql.yotest/site -u 2023123456 -p
