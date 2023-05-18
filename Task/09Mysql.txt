@@ -1,0 +1,51 @@
+MySQL 다운로드
+1. 커스텀 선택
+2. MySQL Server 8.0.26-X64 와 Connector/J 8.0.26-X86 을 각각 선택 후 화살표 를 눌러 오른쪽 목록으로 이동 후 next
+3. MySQL Sever의 설치대상을 확인 후 Execute
+4. 기본값 설정
+5. 관리자 계정인 root 계정의 비밀번호 설정
+6. 기본값으로 설정
+
+MySQL 접속 및 종료
+1. MySQL 8.0 Command Line Client 실행
+2. 비밀번호 입력
+3. MySQL 버전 확인 select version()
+4. 데이터베이스 목록 확인하기 show databases
+5. 특정 데이터 베이스 선택하기 use mysql;
+6. show tables; and use tables;
+7. 특정 테이블의 구조 확인하기 desc component;
+8. 종료 exit
+
+SQL 기본 명령어
+1. 데이터 베이스 생성 CREATE DATABASE 데이터베이스명;
+2. 데이터 베이스 삭제 DROP DATABASE 데이터베이스명;
+3. 데이터 베이스 선택 USE 데이터베이스명;
+
+테이블 관련 명령어
+1. 테이블 제작
+CREATE TABLE 테이블명(
+필드명1 타입,
+필드명2 타입,
+...
+PRIMARY KEY(필드명), NOT NULL
+);
+
+2. 테이블 구조 확인
+DESC 테이블명;
+DESCRIBE 테이블명;
+
+3. 테이블 구조 변경
+새로운 필드 추가하기  ALTER TABLE 테이블명 ADD 필드명 데이터_타입 ALTER 핑드명;
+
+4. 기존 필드 삭제하기
+ALTER TABLE 테이블명 DROP 필드명
+
+5. 테이블 이름 변경
+ALTER TABLE 기존_테이블명 RENAME 변경_테이블명;
+
+6. 테이블 삭제
+DROP TABLE 테이블명;
+
+
+
+
