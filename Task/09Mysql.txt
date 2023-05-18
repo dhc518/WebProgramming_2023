@@ -5,7 +5,6 @@ MySQL 다운로드
 4. 기본값 설정
 5. 관리자 계정인 root 계정의 비밀번호 설정
 6. 기본값으로 설정
-
 MySQL 접속 및 종료
 1. MySQL 8.0 Command Line Client 실행
 2. 비밀번호 입력
@@ -15,12 +14,10 @@ MySQL 접속 및 종료
 6. show tables; and use tables;
 7. 특정 테이블의 구조 확인하기 desc component;
 8. 종료 exit
-
 SQL 기본 명령어
 1. 데이터 베이스 생성 CREATE DATABASE 데이터베이스명;
 2. 데이터 베이스 삭제 DROP DATABASE 데이터베이스명;
 3. 데이터 베이스 선택 USE 데이터베이스명;
-
 테이블 관련 명령어
 1. 테이블 제작
 CREATE TABLE 테이블명(
@@ -29,23 +26,28 @@ CREATE TABLE 테이블명(
 ...
 PRIMARY KEY(필드명), NOT NULL
 );
-
 2. 테이블 구조 확인
 DESC 테이블명;
 DESCRIBE 테이블명;
-
 3. 테이블 구조 변경
-새로운 필드 추가하기  ALTER TABLE 테이블명 ADD 필드명 데이터_타입 ALTER 핑드명;
-
+새로운 필드 추가하기  ALTER TABLE 테이블명 ADD 필드명 데이터_타입 ALTER 필드명;
 4. 기존 필드 삭제하기
 ALTER TABLE 테이블명 DROP 필드명
-
 5. 테이블 이름 변경
 ALTER TABLE 기존_테이블명 RENAME 변경_테이블명;
-
 6. 테이블 삭제
 DROP TABLE 테이블명;
 
+테이블 조작 명령어
+1.데이터 등록 INSERT INTO 테이블명(필드명1, 필드명2) VALUES(필드값1,필드값2);
+2.데이터 조회 SELECT *(필드전체, 출력내용) FROM 테이블명;
+   SELECT 필드명(출력내용) FROM 테이블명 WHERE(조건기준) 필드명 LIKE '김%'(조건내용, 김으로 시작하는 이름)
+3.데이터 수정 UPDATE 테이블명 SET 필드명 = 변경할 조건 WHERE 필드명 = 기존_속성값;
+ 필드명 = 기존_속성값 이란 조건에 해당하는 모든 데이터의 변경할 필드명을 변경할 조건으로 바꿈.
+다만, primary 값으로 설정된 필드는 동일한 필드값이 중복으로 존재할 수 없으며 중복으로 존재하도록 수정할 수도 없다.
 
+테이블의 필드명 변경 ALTER TABLE 테이블명 CHANGE 기존필드명 수정한필드명 varchar(20);
 
-
+4. 데이터 삭제 
+DELETE FROM student_tlb where 필드명 = 조건;
+DELETE FROM student_tlb; 모든 데이터 삭제
