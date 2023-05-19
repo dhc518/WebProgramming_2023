@@ -1,0 +1,2 @@
+USE odbo;
+SELECT * FROM members;
