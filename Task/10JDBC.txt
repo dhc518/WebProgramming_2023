@@ -73,5 +73,27 @@ signup.jsp 파일에서 넘겨받은 정보를 getParameter로 얻어와서 Stri
 	String sql = "INSERT INTO members(id, passwd, email) VALUES";
 	sql += "('" + u_id + "','" + u_pw + "','" + u_mail +"')";
 SQL 쿼리문을 보내기 위한 객체 sm을 생성
+Statement sm = conn.createStatement();
+
+3. 회원정보 출력
+Statement 객체의 executeQuery() 메소드를 선언하여 수행할 SQL 명령문을 ResultSet 유형의 변수 rs에 저장합니다.
+ResultSet rs = sm.executeQuery("SELECT id, email, signuptime FROM members");
+리스트 형태로 출력
+while(rs.next()){
+	str += count + " : " + rs.getString("id") + " / " + rs.getString("email")
+		+ " / " + rs.getString("signuptime") + "<br>";
+		count ++;		
+}
+
+4. 회원탈퇴   프로그램
+4-1.회원 탈퇴 폼 양식 생성하기(withdraw.jsp)
+4-2.회원정보 테이블에서 삭제하기
+회원 탈퇴 폼 화면에서 입력한 아이디에 대한 정보를 가져와 u_id 변수에 저장합니다.
+	String u_id = request.getParameter("userID");
+HTTP로 전달받은 아이디에 대한 정보를 members 테이블에서 삭제하기 위한 DELETE 명령문을 sql변수에 저장합니다. 회원 탈퇴 폼 화면에서 전달되는 파라미터를 이용하기 위해 '?'를 정의합니다.
+	String sql = "DELETE FROM members WHERE id = ?";
+SQL 명렴움을 수행하기 위해 executeUpdate() 메소드를 호출하여 count 변수에 저장합니다.
+	int count = sm.executeUpdate();
+
 
 	
