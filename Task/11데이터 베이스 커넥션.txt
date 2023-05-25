@@ -1,0 +1,43 @@
+ 데이터 베이스 커넥션
+
+ 
+
+01.데이트베이스 커넥션에 대한 이해
+
+커넥션이란 jsp 애플리케이션과 MySQL 데이터 베이스를 연결하는 것으로 jsp 애플리케이션에서 데이터베이스에 접속하고 연결된 데이터베이스와의 접속을 종료하는 일련의 과정을 의미합니다.
+
+ 
+
+02. JDBC 드라이버 파일 존재 위치에 대한 이해
+
+JSBC 드라이버의 의치는 프로그램 폴더\MySQL 폴더\connector J 8.0폴더 안에 존재합니다.
+
+ 
+
+03. JDBC 드라이버 속성에 대한 이해
+
+아클립스에 설정하는 JDBC 드라이버의 속성
+
+Connector URL : jdbc:mysql://localhost:3306/odbo(데이터베이스명)
+
+Database Name : odbo(데이터베이스명)
+
+Driver Class : com.mysql.jdbc.Driver
+
+password : 123456(비밀번호)
+
+user ID : root
+
+ 
+
+04. 데이터베이스 커넥션 제어
+
+이클립스에 등록된 데이터베이스 커넥터 메뉴에서 [Connect]와 [Disconnect]를 선택하여 테이터베이스 커넥션을 제어할 수 있습니다..
+
+ 
+
+05. 이클립스에서 SQl 쿼리문 작성
+
+이클립스에서 SQL 퀴리문을 작성하려면 SQL 스크랩북을 실행해야 합니다.
+
+SQL 스크랩북은 Data Source EExplorer 뷰에서 실행할 수 있으며 데이터 베이스 커넥션 속성은 다음과 같습니다.
